@@ -1,0 +1,125 @@
+body{
+    width: 100%;
+    height: 600px;
+}
+
+.header {
+    height: 220px;
+}
+
+.header .top{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .top .avatar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .top .logo img{
+    width: 50px;
+    height: 40px;
+}
+.header .top .avatar .user{
+    width: 100px;
+    height: 40px;
+}
+
+.header .top .avatar .user span{
+    font-size: 13px;
+}
+.header .top .avatar .user span:nth-child(1){
+    color: gray;
+}
+.header .top .avatar .user span:nth-child(2){
+    margin-left: 48px;
+}
+
+.header .top .avatar img{
+    border-radius: 50%;
+    width: 50px;
+    height: 40px;
+}
+
+.header .bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 160px;
+    background-color: #29b363;
+    color: white;
+    text-align: center;
+}
+
+.header .bottom span:first-child {
+    font-size: 35px;
+}
+
+.container hr {
+    width: 50%;
+    height: 1px;
+    background-color: black;
+    border: none;
+    margin: 30px auto 0px auto;
+  }
+
+.vote button{
+    width: 170px;
+    margin: 30px 0px 60px 0px;
+    color: white;
+}
+
+.vote button:nth-child(1){
+    background-color: rgb(44, 126, 219);
+}
+.vote button:nth-child(2){
+    margin-left: 20px;
+    background-color: #29B363;
+}
+.footer{
+    height: 120px;
+}
+
+.footer .container{
+    padding-top: 20px;
+}
+
+.footer .container span:first-child{
+    display: block;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 24px;
+    }
+    
+    .container {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header span:first-child {
+        font-size: 20px;
+    }
+    
+    .container {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header span:first-child {
+        font-size: 18px;
+    }
+    
+    .container {
+        margin-top: 5px;
+    }
+}
